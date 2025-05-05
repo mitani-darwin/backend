@@ -1,8 +1,0 @@
-spring:
-  profiles:
-    active: dev
-  datasource:
-    url: jdbc:postgresql://db:5433/postgresdb
-    username: postgres
-    password: postgres
-    driver-class-name: org.postgresql.Driver
