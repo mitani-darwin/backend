@@ -6,12 +6,6 @@ plugins {
 group = 'com.daisuke2.planing'
 version = '0.0.1-SNAPSHOT'
 
-java {
-	toolchain {
-		languageVersion = JavaLanguageVersion.of(21)
-	}
-}
-
 repositories {
 	mavenCentral()
 }
@@ -33,9 +27,6 @@ test {
     jvmArgs '-noverify'
 }
 
-tasks.named('test') {
-	useJUnitPlatform()
-}
 
 bootRun {
 	mainClass = 'com.daisuke2.planing.PlaningApplication'
